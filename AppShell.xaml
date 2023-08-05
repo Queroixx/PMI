@@ -6,13 +6,14 @@
     xmlns:local="clr-namespace:notes"
     Shell.FlyoutBehavior="Disabled">
     <TabBar>
+        
         <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
-    <ShellContent
-        Title="sobre"
-        ContentTemplate="{DataTemplate local:sobre}"
-         Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
-       </TabBar>
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:sobre}"
+            Icon="{OnPlatform 'icon_about.png', iOS='icon_about_ios.png', MacCatalyst='icon_about_ios.png'}" />
+    </TabBar>
 </Shell>
